@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="390dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="7dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/attend" />
+
+        <Button
+            android:id="@+id/btnAttendance"
+            android:layout_width="205dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/button_new"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:fontFamily="@font/comfortaa"
+            android:linksClickable="true"
+            android:onClick="onClick"
+            android:text="View Attendance"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="300dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="13dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/result" />
+
+        <Button
+            android:id="@+id/btnResults"
+            android:layout_width="216dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/button_new"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:fontFamily="@font/comfortaa"
+            android:includeFontPadding="true"
+            android:linksClickable="true"
+            android:onClick="onClick"
+            android:text="View Results"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="207dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="7dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/chat" />
+
+        <Button
+            android:id="@+id/btnInteract"
+            android:layout_width="204dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/button_new"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:fontFamily="@font/comfortaa"
+            android:linksClickable="true"
+            android:onClick="onClick"
+            android:text="Interact With Faculty"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="115dp"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="7dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/events" />
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:layout_width="204dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_new"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:fontFamily="@font/comfortaa"
+            android:fontFeatureSettings="tex"
+            android:linksClickable="true"
+            android:onClick="onClick"
+            android:text="New Announcements"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabChatBot"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/chatbot"
+        android:clickable="true"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/chatbot" />
+
+    <TextView
+        android:id="@+id/txtPress"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/chat_txt_view"
+        android:fontFamily="@font/comfortaa"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="CLICK ME !"
+        android:textColor="@color/colorPrimary2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="501dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="60dp"
+        android:paddingRight="260dp">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/boy" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="260dp"
+        android:layout_height="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="526dp"
+        android:gravity="center|center_horizontal"
+        android:text="Student Details"
+        android:textColor="@color/colorPrimary1"
+        android:textSize="30sp" />
+
+</RelativeLayout>
